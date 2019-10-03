@@ -1,0 +1,14 @@
+//7) accept from user how many initials he has in his name, now allocate a memory accordingly and accept his initial. [use new operator]
+#include<iostream>
+using namespace std;
+void main()
+{
+	int num;
+	char *ptr;
+	cout<<"enter number of char in name"<<endl;
+	cin>>num;
+	cout<<"enter name"<<endl;
+	ptr=new char[num-1];
+	cin>>ptr;
+	cout<<ptr<<endl;
+}
