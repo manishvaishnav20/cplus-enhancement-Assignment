@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+
+struct employee
+{
+	char id[20];
+	char name[20];
+	char desig[20];
+}e1,e2,e3;
+
+void main()
+{
+	int num,i,j;
+	cout<<"enter number employee's records"<<endl;
+	cin>>num;
+	employee *ptr;
+	ptr=new employee[num-1];
+	for(i=0;i<num;i++)
+	{
+		cout<<"enter epmID, name, Designation"<<endl;
+	cin>>ptr[i].id>>ptr[i].name>>ptr[i].desig;
+	}
+	for(j=0;j<num;j++)
+	{
+	cout<<ptr[j].id<<" "<<ptr[j].name<<" "<<ptr[j].desig<<endl;
+	}
+}
