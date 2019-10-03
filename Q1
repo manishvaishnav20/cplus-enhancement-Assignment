@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+void main()
+{
+	char name[20];
+	char address[100];
+	int age;
+	cout<<"Enter name address age"<<endl;
+	cin>>name;
+	//cin.getline(address,100);
+	cin>>address;
+	cin>>age;
+	cout<<name<<"\t"<<address<<"\t"<<age<<"\t"<<endl;
+}
