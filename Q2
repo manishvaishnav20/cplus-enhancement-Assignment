@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+struct book
+{
+	char bid[5];
+	char name[30];
+	int price;
+};
+
+void main(){
+	int num;
+	book *ptr;
+	cout<<"Enter number of records:"<<endl;
+	cin>>num;
+	ptr = new book[num-1];
+	cout<<"Enter bid,name,price"<<endl;
+	for(int i=0;i<num;i++){
+		cin >> ptr[i].bid>> ptr[i].name>> ptr[i].price;
+	}
+
+	cout<<endl;
+	for(int k=0;k<num;k++){
+		cout << ptr[k].bid<<" "<< ptr[k].name<<" "<< ptr[k].price<<" "<< endl;
+	}
+}
