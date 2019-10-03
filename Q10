@@ -1,0 +1,18 @@
+/*10)write a function which takes 3 arguments
+variable, pointer and a reference.(any datatype)
+invoke this function and show how "call by value","call by address" and "call by reference" will work.*/
+#include<iostream>
+using namespace std;
+void disp(int a,int *b,int &ref)
+{
+	a=a+5;   // no effect on x
+	*b+=5;   // y changes
+	ref+=5;  // z changes
+}
+void main()
+{
+	int x=10,y=20,z=30;
+	cout<<"x= "<<x<<" y= "<<y<<" z= "<<z<<endl;  //  10   20   30
+	disp(x,&y,z);
+	cout<<"x= "<<x<<" y= "<<y<<" z= "<<z<<endl;  //  10   25   35
+}
