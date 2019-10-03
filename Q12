@@ -1,0 +1,49 @@
+//SUCCESSFULLY created first.c (.c file) and head1.h at developer side and from second.cpp (.cpp file) called function which is in first.c
+
+
+/*12) create a library in c in which,
+write a function which will accept 2 numbers and return the difference between 2 numbers.
+write appropriate header file.*/
+
+//DEVELOPER
+
+//In head1.h
+#ifdef __cplusplus
+extern "C"{
+#endif
+int difference(int,int);
+#ifdef __cplusplus
+}
+#endif
+
+
+//In first.c
+#include<stdio.h>
+#include<stdlib.h>
+
+int difference(int a,int b)
+{
+	int c;
+	c=abs(a-b);
+	return c;
+}
+
+
+//_______________________________________________________
+
+
+
+
+//CLIENT
+
+
+//In second.cpp
+#include<iostream>
+#include "C:\Users\vita1\Desktop\manishe12\client\head1.h"
+using namespace std;
+void main()
+{
+	int d;
+	d=difference(20,34);
+	cout<<"d= "<<d<<endl;
+}
