@@ -1,0 +1,24 @@
+//SUCCESSFULLY created ststic lib,header and copied to client folder and executed client program
+
+//devloper
+#include<stdio.h>
+#include<stdlib.h>
+int difference(int a,int b)
+{
+	int c;
+	c=abs(a-b);
+	return c;
+}
+
+
+______________________________________
+
+//client
+#include<stdio.h>
+#include"C:\Users\vita1\Desktop\manishoct2\client\Header.h"
+void main()
+{
+	int d;
+	d=difference(20,34);
+	printf("difference between number is %d\n",d);
+}
